@@ -31,8 +31,8 @@ class PlgSystemJreject extends JPlugin
 		JHtml::_('jquery.framework');
 
 		$document = JFactory::getDocument();
-		$document->addStyleSheet(JURI::base(true) . '/media/jreject/css/jquery.reject.css');
-		$document->addScript(JURI::base(true) . '/media/jreject/js/jquery.reject.js');
+		$document->addStyleSheet(JURI::base(true) . '/media/jreject/css/jquery.reject.min.css');
+		$document->addScript(JURI::base(true) . '/media/jreject/js/jquery.reject.min.js');
 
 		$script = 'jQuery(document).ready(function(){jQuery.reject({';
 

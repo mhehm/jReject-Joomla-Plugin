@@ -3,10 +3,10 @@
 	<name>plg_system_jreject</name>
 	<author>Mohammad Hasani Eghtedar</author>
 	<creationDate>February 2014</creationDate>
-	<copyright>Copyright (C) 2014 - 2014 Open Source Matters. All rights reserved.</copyright>
+	<copyright>Copyright (C) 2014 Open Source Matters. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
-	<authorEmail>m.h.eghtedar@behineweb.com</authorEmail>
-	<authorUrl>www.behineweb.com</authorUrl>
+	<authorEmail>m.h.eghtedar@gmail.com</authorEmail>
+	<authorUrl>www.mhehm.ir</authorUrl>
 	<version>1.0.2</version>
 	<description>PLG_SYSTEM_JREJECT_XML_DESCRIPTION</description>
 	<files>
@@ -26,7 +26,7 @@
 		<language tag="fa-IR">fa-IR/fa-IR.plg_system_jreject.sys.ini</language>
 	</languages>
 	<updateservers>
-		<server type="extension" priority="2" name="Behine Web Updates">http://behineweb.com/projects/plg_system_jreject.xml</server>
+		<server type="extension" priority="1" name="jReject Updates">http://www.mhehm.ir/updates/jreject.xml</server>
 	</updateservers>
 	<config>
 		<fields name="params">
