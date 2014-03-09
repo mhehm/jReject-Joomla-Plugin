@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="system" method="upgrade">
+	<name>plg_system_jreject</name>
+	<author>Mohammad Hasani Eghtedar</author>
+	<creationDate>February 2014</creationDate>
+	<copyright>Copyright (C) 2014 - 2014 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>m.h.eghtedar@behineweb.com</authorEmail>
+	<authorUrl>www.behineweb.com</authorUrl>
+	<version>1.0.2</version>
+	<description>PLG_SYSTEM_JREJECT_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="jreject">jreject.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<media folder="media" destination="jreject">
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<filename>index.html</filename>
+	</media>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_system_jreject.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_jreject.sys.ini</language>
+		<language tag="fa-IR">fa-IR/fa-IR.plg_system_jreject.ini</language>
+		<language tag="fa-IR">fa-IR/fa-IR.plg_system_jreject.sys.ini</language>
+	</languages>
+	<updateservers>
+		<server type="extension" priority="2" name="Behine Web Updates">http://behineweb.com/projects/plg_system_jreject.xml</server>
+	</updateservers>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="reject"
+					type="groupedlist"
+					multiple="true"
+					class="span12"
+					label="PLG_SYSTEM_JREJECT_FIELD_REJECT_LABEL"
+					description="PLG_SYSTEM_JREJECT_FIELD_REJECT_DESC">
+					<option value="all">PLG_SYSTEM_JREJECT_VALUE_ALL</option>
+					<option value="unknown">PLG_SYSTEM_JREJECT_VALUE_UNKNOWN</option>
+					<group label="PLG_SYSTEM_JREJECT_GROUP_MSIE">
+						<option value="msie">PLG_SYSTEM_JREJECT_VALUE_MSIE_ALL</option>
+						<option value="msie5">PLG_SYSTEM_JREJECT_VALUE_MSIE5</option>
+						<option value="msie6">PLG_SYSTEM_JREJECT_VALUE_MSIE6</option>
+						<option value="msie7">PLG_SYSTEM_JREJECT_VALUE_MSIE7</option>
+						<option value="msie8">PLG_SYSTEM_JREJECT_VALUE_MSIE8</option>
+					</group>
+					<group label="PLG_SYSTEM_JREJECT_GROUP_FIREFOX">
+						<option value="firefox">PLG_SYSTEM_JREJECT_VALUE_FIREFOX_ALL</option>
+						<option value="firefox1">PLG_SYSTEM_JREJECT_VALUE_FIREFOX1</option>
+						<option value="firefox2">PLG_SYSTEM_JREJECT_VALUE_FIREFOX2</option>
+						<option value="firefox3">PLG_SYSTEM_JREJECT_VALUE_FIREFOX3</option>
+					</group>
+					<group label="PLG_SYSTEM_JREJECT_GROUP_KONQUEROR">
+						<option value="konqueror">PLG_SYSTEM_JREJECT_VALUE_KONQUEROR_ALL</option>
+						<option value="konqueror1">PLG_SYSTEM_JREJECT_VALUE_KONQUEROR1</option>
+						<option value="konqueror2">PLG_SYSTEM_JREJECT_VALUE_KONQUEROR2</option>
+						<option value="konqueror3">PLG_SYSTEM_JREJECT_VALUE_KONQUEROR3</option>
+					</group>
+					<group label="PLG_SYSTEM_JREJECT_GROUP_CHROME">
+						<option value="chrome">PLG_SYSTEM_JREJECT_VALUE_CHROME_ALL</option>
+						<option value="chrome1">PLG_SYSTEM_JREJECT_VALUE_CHROME1</option>
+						<option value="chrome2">PLG_SYSTEM_JREJECT_VALUE_CHROME2</option>
+						<option value="chrome3">PLG_SYSTEM_JREJECT_VALUE_CHROME3</option>
+						<option value="chrome4">PLG_SYSTEM_JREJECT_VALUE_CHROME4</option>
+					</group>
+					<group label="PLG_SYSTEM_JREJECT_GROUP_SAFARI">
+						<option value="safari">PLG_SYSTEM_JREJECT_VALUE_SAFARI_ALL</option>
+						<option value="safari2">PLG_SYSTEM_JREJECT_VALUE_SAFARI2</option>
+						<option value="safari3">PLG_SYSTEM_JREJECT_VALUE_SAFARI3</option>
+						<option value="safari4">PLG_SYSTEM_JREJECT_VALUE_SAFARI4</option>
+					</group>
+					<group label="PLG_SYSTEM_JREJECT_GROUP_OPERA">
+						<option value="opera">PLG_SYSTEM_JREJECT_VALUE_OPERA_ALL</option>
+						<option value="opera7">PLG_SYSTEM_JREJECT_VALUE_OPERA7</option>
+						<option value="opera8">PLG_SYSTEM_JREJECT_VALUE_OPERA8</option>
+						<option value="opera9">PLG_SYSTEM_JREJECT_VALUE_OPERA9</option>
+						<option value="opera10">PLG_SYSTEM_JREJECT_VALUE_OPERA10</option>
+					</group>
+					<group label="PLG_SYSTEM_JREJECT_GROUP_RENDERING_ENGINES">
+						<option value="gecko">PLG_SYSTEM_JREJECT_VALUE_GECKO</option>
+						<option value="webkit">PLG_SYSTEM_JREJECT_VALUE_WEBKIT</option>
+						<option value="trident">PLG_SYSTEM_JREJECT_VALUE_TRIDENT</option>
+						<option value="khtml">PLG_SYSTEM_JREJECT_VALUE_KHTML</option>
+						<option value="presto">PLG_SYSTEM_JREJECT_VALUE_PRESTO</option>
+					</group>
+					<group label="PLG_SYSTEM_JREJECT_GROUP_OPERATING_SYSTEMS">
+						<option value="win">PLG_SYSTEM_JREJECT_VALUE_WIN</option>
+						<option value="mac">PLG_SYSTEM_JREJECT_VALUE_MAC</option>
+						<option value="linux">PLG_SYSTEM_JREJECT_VALUE_LINUX</option>
+						<option value="solaris">PLG_SYSTEM_JREJECT_VALUE_SOLARIS</option>
+						<option value="iphone">PLG_SYSTEM_JREJECT_VALUE_IPHONE</option>
+					</group>
+				</field>
+				<field
+					name="display"
+					type="list"
+					default="all"
+					class="span12"
+					multiple="true"
+					label="PLG_SYSTEM_JREJECT_FIELD_DISPLAY_LABEL"
+					description="PLG_SYSTEM_JREJECT_FIELD_DISPLAY_DESC">
+					<option value="'firefox'">PLG_SYSTEM_JREJECT_VALUE_FIREFOX</option>
+					<option value="'chrome'">PLG_SYSTEM_JREJECT_VALUE_CHROME</option>
+					<option value="'msie'">PLG_SYSTEM_JREJECT_VALUE_MSIE</option>
+					<option value="'safari'">PLG_SYSTEM_JREJECT_VALUE_SAFARI</option>
+					<option value="'opera'">PLG_SYSTEM_JREJECT_VALUE_OPERA</option>
+					<option value="'gcf'">PLG_SYSTEM_JREJECT_VALUE_GCF</option>
+				</field>
+			</fieldset>
+			<fieldset name="close" label="PLG_SYSTEM_JREJECT_CLOSE_FIELDSET_LABEL">
+				<field
+					name="close"
+					type="radio"
+					default="1"
+					class="btn-group"
+					label="PLG_SYSTEM_JREJECT_FIELD_CLOSE_LABEL"
+					description="PLG_SYSTEM_JREJECT_FIELD_CLOSE_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="closeESC"
+					type="radio"
+					default="1"
+					class="btn-group"
+					label="PLG_SYSTEM_JREJECT_FIELD_CLOSEESC_LABEL"
+					description="PLG_SYSTEM_JREJECT_FIELD_CLOSEESC_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="closeURL"
+					type="text"
+					class="ltr"
+					label="PLG_SYSTEM_JREJECT_FIELD_CLOSEURL_LABEL"
+					description="PLG_SYSTEM_JREJECT_FIELD_CLOSEURL_DESC" />
+				<field
+					name="closeCookie"
+					type="radio"
+					default="0"
+					class="btn-group ltr"
+					label="PLG_SYSTEM_JREJECT_FIELD_CLOSECOOKIE_LABEL"
+					description="PLG_SYSTEM_JREJECT_FIELD_CLOSECOOKIE_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+					<option value="2">PLG_SYSTEM_JREJECT_VALUE_COOKIE</option>
+				</field>
+				<field
+					name="expires"
+					type="text"
+					class="ltr"
+					label="PLG_SYSTEM_JREJECT_FIELD_EXPIRES_LABEL"
+					description="PLG_SYSTEM_JREJECT_FIELD_EXPIRES_DESC" />
+			</fieldset>
+			<fieldset name="effect" label="PLG_SYSTEM_JREJECT_EFFECT_FIELDSET_LABEL">
+				<field
+					name="overlayBgColor"
+					type="color"
+					class="ltr"
+					label="PLG_SYSTEM_JREJECT_FIELD_OVERLAYBGCOLOR_LABEL"
+					description="PLG_SYSTEM_JREJECT_FIELD_OVERLAYBGCOLOR_DESC" />
+				<field
+					name="overlayOpacity"
+					type="range"
+					class="ltr"
+					min="0"
+					max="100"
+					step="1"
+					default="80"
+					label="PLG_SYSTEM_JREJECT_FIELD_OVERLAYOPACITY_LABEL"
+					description="PLG_SYSTEM_JREJECT_FIELD_OVERLAYOPACITY_DESC" />
+				<field
+					name="fadeInTime"
+					type="radio"
+					default="fast"
+					class="btn-group"
+					label="PLG_SYSTEM_JREJECT_FIELD_FADEINTIME_LABEL"
+					description="PLG_SYSTEM_JREJECT_FIELD_FADEINTIME_DESC">
+					<option value="fast">PLG_SYSTEM_JREJECT_VALUE_FAST</option>
+					<option value="medium">PLG_SYSTEM_JREJECT_VALUE_MEDIUM</option>
+					<option value="slow">PLG_SYSTEM_JREJECT_VALUE_SLOW</option>
+					<option value="custom">PLG_SYSTEM_JREJECT_VALUE_CUSTOM</option>
+				</field>
+				<field
+					name="fadeInTimeCustom"
+					type="text"
+					class="ltr"
+					label="PLG_SYSTEM_JREJECT_FIELD_FADEINTIMECUSTOM_LABEL"
+					description="PLG_SYSTEM_JREJECT_FIELD_FADEINTIMECUSTOM_DESC" />
+				<field
+					name="fadeOutTime"
+					type="radio"
+					default="fast"
+					class="btn-group"
+					label="PLG_SYSTEM_JREJECT_FIELD_FADEOUTTIME_LABEL"
+					description="PLG_SYSTEM_JREJECT_FIELD_FADEOUTTIME_DESC">
+					<option value="fast">PLG_SYSTEM_JREJECT_VALUE_FAST</option>
+					<option value="medium">PLG_SYSTEM_JREJECT_VALUE_MEDIUM</option>
+					<option value="slow">PLG_SYSTEM_JREJECT_VALUE_SLOW</option>
+					<option value="custom">PLG_SYSTEM_JREJECT_VALUE_CUSTOM</option>
+				</field>
+				<field
+					name="fadeOutTimeCustom"
+					type="text"
+					class="ltr"
+					label="PLG_SYSTEM_JREJECT_FIELD_FADEOUTTIMECUSTOM_LABEL"
+					description="PLG_SYSTEM_JREJECT_FIELD_FADEOUTTIMECUSTOM_DESC" />
+			</fieldset>
+			<fieldset name="browsers" label="PLG_SYSTEM_JREJECT_BROWSERS_FIELDSET_LABEL">
+				<field
+					name="firefoxURL"
+					type="text"
+					class="ltr"
+					label="PLG_SYSTEM_JREJECT_FIELD_FIREFOXURL_LABEL"
+					description="PLG_SYSTEM_JREJECT_FIELD_FIREFOXURL_DESC" />
+				<field
+					name="chromeURL"
+					type="text"
+					class="ltr"
+					label="PLG_SYSTEM_JREJECT_FIELD_CHROMEURL_LABEL"
+					description="PLG_SYSTEM_JREJECT_FIELD_CHROMEURL_DESC" />
+				<field
+					name="msieURL"
+					type="text"
+					class="ltr"
+					label="PLG_SYSTEM_JREJECT_FIELD_MSIEURL_LABEL"
+					description="PLG_SYSTEM_JREJECT_FIELD_MSIEURL_DESC" />
+				<field
+					name="safariURL"
+					type="text"
+					class="ltr"
+					label="PLG_SYSTEM_JREJECT_FIELD_SAFARIURL_LABEL"
+					description="PLG_SYSTEM_JREJECT_FIELD_SAFARIURL_DESC" />
+				<field
+					name="operaURL"
+					type="text"
+					class="ltr"
+					label="PLG_SYSTEM_JREJECT_FIELD_OPERAURL_LABEL"
+					description="PLG_SYSTEM_JREJECT_FIELD_OPERAURL_DESC" />
+				<field
+					name="gcfURL"
+					type="text"
+					class="ltr"
+					label="PLG_SYSTEM_JREJECT_FIELD_GCFURL_LABEL"
+					description="PLG_SYSTEM_JREJECT_FIELD_GCFURL_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
