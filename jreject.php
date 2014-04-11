@@ -72,7 +72,7 @@ class PlgSystemJreject extends JPlugin
 		{
 			$browser = str_replace("'", '', $browser);
 			$script .= $browser . ':{';
-			$script .= "text:'" . JText::_('PLG_SYSTEM_JREJECT_BROWSER_' . strtoupper($browser)) . "',";
+			$script .= "text:'" . JText::_('PLG_SYSTEM_JREJECT_BROWSER_' . strtoupper($browser), true) . "',";
 
 			if($browserURL = $this->params->get($browser . 'URL'))
 			{
@@ -84,13 +84,13 @@ class PlgSystemJreject extends JPlugin
 		$script .= '},';
 
 		// Header of pop-up window
-		$script .= "header:'" . JText::_('PLG_SYSTEM_JREJECT_HEADER') . "',";
+		$script .= "header:'" . JText::_('PLG_SYSTEM_JREJECT_HEADER', true) . "',";
 
 		// Paragraph 1
-		$script .= "paragraph1:'" . JText::_('PLG_SYSTEM_JREJECT_PARAGRAPH1') . "',";
+		$script .= "paragraph1:'" . JText::_('PLG_SYSTEM_JREJECT_PARAGRAPH1', true) . "',";
 
 		// Paragraph 2
-		$script .= "paragraph2:'" . JText::_('PLG_SYSTEM_JREJECT_PARAGRAPH2') . "',";
+		$script .= "paragraph2:'" . JText::_('PLG_SYSTEM_JREJECT_PARAGRAPH2', true) . "',";
 
 		// DO not allow closing of window
 		if(!$this->params->get('close', 1))
@@ -99,10 +99,10 @@ class PlgSystemJreject extends JPlugin
 		}
 
 		// Message displayed below closing link
-		$script .= "closeMessage:'" . JText::_('PLG_SYSTEM_JREJECT_CLOSEMESSAGE') . "',";
+		$script .= "closeMessage:'" . JText::_('PLG_SYSTEM_JREJECT_CLOSEMESSAGE', true) . "',";
 
 		// Text for closing link
-		$script .= "closeLink:'" . JText::_('PLG_SYSTEM_JREJECT_CLOSELINK') . "',";
+		$script .= "closeLink:'" . JText::_('PLG_SYSTEM_JREJECT_CLOSELINK', true) . "',";
 
 		// Close URL. Default: #
 		if($closeURL = $this->params->get('closeURL'))
