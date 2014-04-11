@@ -7,7 +7,7 @@
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>m.h.eghtedar@gmail.com</authorEmail>
 	<authorUrl>www.mhehm.ir</authorUrl>
-	<version>1.0.2</version>
+	<version>1.0.3</version>
 	<description>PLG_SYSTEM_JREJECT_XML_DESCRIPTION</description>
 	<files>
 		<filename plugin="jreject">jreject.php</filename>
