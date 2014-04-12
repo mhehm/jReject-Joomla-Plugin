@@ -109,6 +109,16 @@
 					<option value="'opera'">PLG_SYSTEM_JREJECT_VALUE_OPERA</option>
 					<option value="'gcf'">PLG_SYSTEM_JREJECT_VALUE_GCF</option>
 				</field>
+				<field
+					name="jquery"
+					type="radio"
+					default="1"
+					class="btn-group"
+					label="PLG_SYSTEM_JREJECT_FIELD_JQUERY_LABEL"
+					description="PLG_SYSTEM_JREJECT_FIELD_JQUERY_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
 			</fieldset>
 			<fieldset name="close" label="PLG_SYSTEM_JREJECT_CLOSE_FIELDSET_LABEL">
 				<field
