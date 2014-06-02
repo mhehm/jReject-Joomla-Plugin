@@ -7,7 +7,7 @@ Provides full customization of the popup. Uses a small CSS file.
 
 Also provides a flexible way to beautifully and cleanly display custom browser alternatives in the popup.
 
-[Mohammad Hasani Eghtedar](http://www.mhehm.ir) Joomla Plugin Developer
+[Mohammad Hasani Eghtedar](http://www.mhehm.ir) Joomla Extension Developer
 
 [JED Page](http://extensions.joomla.org/extensions/site-management/browsers-a-web-standards/26754) If you like this plugin please review it
 
