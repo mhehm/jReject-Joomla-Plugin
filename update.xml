@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<updates>
+	<update>
+		<name>jQuery Browser Rejection Plugin</name>
+		<description>jReject is a simple, light-weight library designed to display a popup based on a the browser, specific browser version, specific platforms, or rendering engine.</description>
+		<element>jreject</element>
+		<type>plugin</type>
+		<version>1.1.0</version>
+		<infourl title="jQuery Browser Rejection Plugin">http://extensions.joomla.org/extensions/extension/site-management/browsers-a-web-standards/jquery-browser-rejection</infourl>
+		<downloads>
+			<downloadurl type="full" format="zip">https://github.com/mhehm/jReject-Joomla-Plugin/archive/1.1.0.zip</downloadurl>
+		</downloads>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+		<maintainer>Mohammad Hasani Eghtedar</maintainer>
+		<maintainerurl>http://www.mhehm.ir</maintainerurl>
+		<section>frs</section>
+		<targetplatform name="joomla" version="3.1" />
+	</update>
+</updates>

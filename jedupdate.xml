@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jedupdate version="1">
+	<core_body>
+jReject is a simple, light-weight library designed to display a popup based on a the browser, specific browser version, specific platforms, or rendering engine.
+
+Provides full customization of the popup. Uses a small CSS file.
+
+Also provides a flexible way to beautifully and cleanly display custom browser alternatives in the popup.
+	</core_body>
+	
+	<!-- valid links only or leave blank -->
+	<homepage_link>https://github.com/mhehm/jReject-Joomla-Plugin</homepage_link>
+	<download_link>https://github.com/mhehm/jReject-Joomla-Plugin/releases</download_link>
+	<demo_link>http://jreject.turnwheel.com</demo_link>
+	<documentation_link>https://github.com/mhehm/jReject-Joomla-Plugin/wiki</documentation_link>
+	<support_link>https://github.com/mhehm/jReject-Joomla-Plugin/issues</support_link>
+	<license_link></license_link>
+	
+	<version>1.1.0</version>
+
+	<compatibility>
+		<version>30</version>
+	</compatibility>
+</jedupdate>
