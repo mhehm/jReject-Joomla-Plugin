@@ -9,7 +9,7 @@ Also provides a flexible way to beautifully and cleanly display custom browser a
 
 [Mohammad Hasani Eghtedar](http://www.mhehm.ir) Joomla Extension Developer
 
-[JED Page](http://extensions.joomla.org/extensions/site-management/browsers-a-web-standards/26754) If you like this plugin please review it
+[JED Page](http://extensions.joomla.org/extensions/extension/site-management/browsers-a-web-standards/jquery-browser-rejection) If you like this plugin please review it
 
 Based on http://jreject.turnwheel.com
 

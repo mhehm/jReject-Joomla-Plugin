@@ -3,12 +3,15 @@
  * @package     Joomla.Plugin
  * @subpackage  System.jreject
  *
- * @copyright   Copyright (C) 2014 - 2014 Open Source Matters, Inc. All rights reserved.
+ * @copyright   Copyright (C) 2014 - 2015 Open Source Matters, Inc. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
 defined('_JEXEC') or die;
 
+/**
+ * jReject plugin class.
+ */
 class PlgSystemJreject extends JPlugin
 {
 	/**
@@ -52,7 +55,14 @@ class PlgSystemJreject extends JPlugin
 			{
 				foreach($reject as $r)
 				{
-					$script .= $r . ':true,';
+					if ($ver = (int) $this->params->get($r))
+					{
+						$script .= $r . ":$ver,";
+					}
+					else
+					{
+						$script .= $r . ':true,';
+					}
 				}
 			}
 
