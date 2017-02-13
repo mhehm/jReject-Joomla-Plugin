@@ -7,7 +7,7 @@ Provides full customization of the popup. Uses a small CSS file.
 
 Also provides a flexible way to beautifully and cleanly display custom browser alternatives in the popup.
 
-[Mohammad Hasani Eghtedar](http://www.mhehm.ir) Joomla Extension Developer
+[miniJOOMLA](http://www.minijoomla.com) mini extensions for Joomla!
 
 [JED Page](http://extensions.joomla.org/extensions/extension/site-management/browsers-a-web-standards/jquery-browser-rejection) If you like this plugin please review it
 
